@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    width: 95%;
+    height: 700px;
+    border: 2px solid #444;
+    background: white;
+}
+
+/* HORAS */
+
+.horas{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #555;
+}
+
+.hora{
+    flex: 1;
+    border-bottom: 1px dashed #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.encabezado-hora{
+    background: #222;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    align-items: center;
+    height: 80px;
+}
+
+/* DÍAS */
+
+.dias{
+    width: 80%;
+    display: flex;
+}
+
+.dia{
+    flex: 1;
+    border-right: 1px solid #777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dia:last-child{
+    border-right: none;
+}
+
+.encabezado{
+    width: 100%;
+    height: 100px;
+    background: #222;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #555;
+}
+
+/* MATERIAS */
+
+.materia{
+    width: 90%;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.materia:hover{
+    transform: scale(1.03);
+}
+
+/* IMÁGENES */
+
+.materia img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+/* TEXTOS */
+
+.materia h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.materia p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.materia span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* COLORES DIFERENTES */
+
+.derechos{
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+.ingles{
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+.tecnicas{
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+}
+
+.interfaz{
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    height: 300px;
+}
+
+.codificacion{
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+.bases{
+    background: linear-gradient(135deg, #1d976c, #93f9b9);
+}
