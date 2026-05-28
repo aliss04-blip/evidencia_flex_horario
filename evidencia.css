@@ -1,168 +1,180 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body{
-    background: #f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
+background: #f4f4f4;
+/* Tipografía moderna sans-serif ideal para entornos de software */
+font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 }
 
 .titulo{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #333;
-    letter-spacing: 3px;
-    font-size: 35px;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 20px;
+color: #333;
+letter-spacing: 3px;
+font-size: 35px;
 }
 
 .container{
-    display: flex;
-    margin: auto;
-    width: 95%;
-    height: 700px;
-    border: 2px solid #444;
-    background: white;
+display: flex;
+margin: auto;
+width: 95%;
+height: 700px;
+border: 2px solid #444;
+background: white;
 }
 
 /* HORAS */
 
 .horas{
-    width: 20%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    border-right: 2px solid #555;
+width: 20%;
+height: auto;
+display: flex;
+flex-direction: column;
+border-right: 2px solid #555;
 }
 
 .hora{
-    flex: 1;
-    border-bottom: 1px dashed #777;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
+flex: 1;
+border-bottom: 1px dashed #777;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-weight: bold;
+font-size: 13px;
 }
 
 .encabezado-hora{
-    background: #222;
-    color: white;
-    font-size: 18px;
-    width: 100%;
-    align-items: center;
-    height: 80px;
+background: #222;
+color: white;
+font-size: 18px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px; /* Igualado a 100px para alineación horizontal perfecta */
+border-bottom: 2px solid #555;
 }
 
 /* DÍAS */
 
 .dias{
-    width: 80%;
-    display: flex;
+width: 80%;
+display: flex;
 }
 
 .dia{
-    flex: 1;
-    border-right: 1px solid #777;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+flex: 1;
+border-right: 1px solid #777;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .dia:last-child{
-    border-right: none;
+border-right: none;
 }
 
 .encabezado{
-    width: 100%;
-    height: 100px;
-    background: #222;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid #555;
+width: 100%;
+height: 100px;
+background: #222;
+color: white;
+font-size: 22px;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom: 2px solid #555;
 }
 
 /* MATERIAS */
 
 .materia{
-    width: 90%;
-    height: 300px;
-    margin-top: 15px;
-    border-radius: 15px;
-    padding: 10px;
-    color: white;
+width: 90%;
+height: 285px; /* Ajustado para que las tarjetas quepan perfectamente */
+margin-top: 10px;
+border-radius: 15px;
+padding: 12px;
+color: white;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
 
-    text-align: center;
-
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-
-    transition: 0.3s;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+transition: 0.3s;
 }
 
 .materia:hover{
-    transform: scale(1.03);
+transform: scale(1.03);
 }
 
 /* IMÁGENES */
 
 .materia img{
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-    border-radius: 20px;
+width: 60px;
+height: 60px;
+margin-bottom: 10px;
+border-radius: 20px;
 }
 
-/* TEXTOS */
+/* TEXTOS DENTRO DE LAS TARJETAS */
 
 .materia h3{
-    font-size: 22px;
-    margin-bottom: 8px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+margin-bottom: 8px;
+font-weight: 700;
+letter-spacing: 0.5px;
 }
 
 .materia p{
-    font-size: 14px;
-    margin-bottom: 8px;
+font-size: 14px;
+margin-bottom: 8px;
+line-height: 1.3;
 }
 
 .materia span{
-    font-size: 14px;
-    font-weight: bold;
+font-size: 14px;
+font-weight: bold;
+opacity: 0.9;
 }
 
-/* COLORES DIFERENTES */
+/* ESPACIADOR PARA EL MIÉRCOLES */
+.espacio-libre {
+height: 95px; /* Empuja la tarjeta de inglés hacia abajo emulando las horas vacías */
+width: 100%;
+}
+
+/* GRADIENTES Y COLORES */
 
 .derechos{
-    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+background: linear-gradient(135deg, #4e54c8, #363cb1);
 }
 
-.ingles{
-    background: linear-gradient(135deg, #11998e, #38ef7d);
-}
 .tecnicas{
-    background: linear-gradient(135deg, #fc466b, #3f5efb);
+background: linear-gradient(135deg, #fc466b, #2039b8);
 }
 
 .interfaz{
-    background: linear-gradient(135deg, #00b09b, #96c93d);
-    height: 300px;
+background: linear-gradient(135deg, #04ddc4, #7db818);
+}
+
+.ingles{
+background: linear-gradient(135deg, #11998e, #38ef7d);
 }
 
 .codificacion{
-    background: linear-gradient(135deg, #f7971e, #ffd200);
+background: linear-gradient(135deg, #ecb41a, #ffd200);
 }
+
 .bases{
-    background: linear-gradient(135deg, #1d976c, #93f9b9);
+background: linear-gradient(135deg, #1d976c, #93f9b9);
 }
